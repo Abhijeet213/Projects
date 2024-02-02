@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account</title>
+    <style>
+        #lo:hover{
+    background-color: aqua;
+
+}
+li{
+    list-style: none;
+    display: inline;
+    margin-right: 15px;
+    font-size: 12px;
+    font-size: 21px;
+}
+.log{
+    margin-bottom: 21px;
+    padding: 15px;
+    border-radius: 21px;
+    margin-top: 13px;    
+}
+#logo{
+ display: inline;
+}
+ul{
+    margin-right: 2px !important;
+    margin: 96px;
+    display: inline;
+    margin-top: -70px;
+    background-color: lightblue;
+    margin-left: -12px;
+    padding-bottom: 12px;
+    border-radius: 52px;
+}
+a:hover{
+    color: black !important;
+    text-shadow: 1px 1px 2px black;
+}
+a{
+    text-decoration: none;
+    color: steelblue;
+}
+</style>
+</head>
+<body style="overflow: hidden;">
+<nav style="background-color: lightblue; margin:-8px; padding-bottom: 12px; 
+background-color: lightblue;
+margin: 8px;
+padding-bottom: 12px;
+display: inline-block;
+border-radius: 52px;
+margin-left: 38%;
+padding: 16px;">
+<!-- <h2 style="display: inline-block; font-family: Arial, Helvetica, sans-serif;
+display: inline-block;
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 12px;
+margin-bottom: 4px;
+margin-left: 16px;
+">Online Banking</h2>   -->
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/about/">About Us</a></li>
+
+</ul>
+</nav>
+    
+<div style="
+/* width: 79px; */
+border-radius: 14px;
+background-color: lightblue;
+display: inline-block;
+float: right;
+/* width: 96px; */
+width: 105px;
+height: 32px;
+text-align: center;
+padding-top: 14px;
+margin-top: 13px;
+margin-right: -11px;
+">
+   <a href="/logout/">LogOut</a>
+
+</div>
+<br>
+<br>
+
+<div style="
+margin-top: 4rem;
+    margin-left: 102px;
+    text-align: center;
+    display: inline-block;">
+    <h1>Deposite Money</h1>
+    <h2>{{msg}}</h2>
+    <form action="/depo/" method="post">
+        <input type="number" placeholder="Enter Money For Deposite" name="mfd" class="log">
+        <br>
+        <input type="number" placeholder="Enter Pin" name="pn" class="log">
+        <br>
+        <button type="submit" id ="lo" style="
+        border-radius: 13px;
+text-align: center !important;
+padding: 12px;
+padding-right: 33px !important;
+padding-left: 27px;
+margin-left: -14px;">Deposite Now</button>
+    </form>
+     
+</div>
+
+<div style="
+margin-top: 4rem;
+    margin-left: 219px;
+    text-align: center;
+    display: inline-block;">
+<h2>Total Deposite Money - {{depo}}</h2>
+<h2>Total Withdrawl Money - {{witah}}</h2>
+<h2>Current Money - {{cur}}</h2>
+<h2>Account No - {{accno}}</h2>
+
+    
+</div>
+
+<div style="
+margin-top: 4rem;
+    margin-left: 172px;
+    text-align: center;
+    display: inline-block;">
+    <h1>Widthdrawl  Money</h1>
+    <form action="/witha/" method="post">
+        <input type="number" placeholder="Enter Money For Widthdrawl" name="mfw" class="log">
+        <br>
+        <input type="number" placeholder="Enter Pin" name="pina" class="log">
+        <br>
+        <button type="submit" id ="lo" style="
+        border-radius: 13px;
+text-align: center !important;
+padding: 12px;
+padding-right: 33px !important;
+padding-left: 27px;
+margin-left: -14px;">Widthraw Now</button>
+    </form>
+    
+</div>
+
+
+</body>
+</html>
