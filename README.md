@@ -44,4 +44,4 @@ Elevate your coding sessions with motivational content. Need a coding buddy? Con
 Get started with the Digital Explorer's Hub by cloning the repository to your local machine:
 
 ```bash
-git clone https://github.com/Abhijeet213/your-repo.git
+git clone https://github.com/Abhijeet213/Projects.git
