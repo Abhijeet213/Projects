@@ -1,0 +1,9 @@
+1.create database account;
+
+2. use account;
+
+3.create table user(name varchar(250),email varchar(300) primary key,password varchar(200));
+
+3.create database blogs;
+
+4.create table post(heading varchar(400), des varchar(2000),author varchar(299),date varchar(300))
