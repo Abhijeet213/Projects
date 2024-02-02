@@ -1,0 +1,181 @@
+li {
+  display: inline-block;
+  margin-right: 2pc;
+}
+
+.center {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+
+.abc:hover::before {
+  width: 100%;
+}
+
+
+
+.cona {
+  height: 63px;
+  width: 59px;
+  padding: 20px;
+}
+
+.lia {
+  font-style: italic;
+  letter-spacing: 2px;
+  font-size: 18px;
+  color: papayawhip;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+}
+
+#vg {
+  color: brown;
+  text-decoration: none;
+  padding: 10px;
+  background-color: lightyellow;
+  border-radius: 15px;
+  font-size: 1pc;
+  font-weight: 600;
+}
+
+#vg:hover {
+  background-color: lightcoral;
+}
+
+.ab:hover {
+  box-shadow: 0px 6px 117px 28px white;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 63vh;
+  margin: 0;
+}
+
+.col {
+  font-family: 'Lato', sans-serif;
+}
+
+.ladder {
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.ladder span {
+  display: block;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease; /* Transition for the width property */
+}
+
+.col {
+  color: white;
+}
+
+a:hover::before {
+  width: 100%;
+}
+
+.abc {
+  background-color: aqua;
+}
+
+.up-down-animation {
+  opacity: 0;
+  /* Set initial opacity to 0 */
+  transform: translateY(-50px);
+  /* Move the element up */
+  transition: opacity 1s ease, transform 1s ease;
+  /* Set transition properties */
+}
+
+.up-down-animation.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ab:hover {
+  background-color: lightblue!important;
+}
+
+.sh {
+  box-shadow: 24px -42px 99px 23px black;
+}
+
+.conta {
+  margin-top: 12px;
+  padding: 11px;
+  border-radius: 21px;
+}
+
+.suba:hover {
+  background-color: bisque;
+  box-shadow: 1px 1px 1px 1px bisque;
+}
+
+.footer {
+  background-color: black;
+}
+
+.fot {
+  margin-right: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .center {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .cona {
+      margin-bottom: 20px;
+  }
+
+  #vg {
+      margin-top: 20px;
+      margin-right: 0;
+      float: none;
+  }
+
+  .container {
+      height: auto;
+  }
+
+  .ladder {
+      font-size: 18px;
+  }
+
+  .proj,
+  .cont {
+      width: 80%;
+      margin: 0 auto;
+  }
+
+  .sh {
+      width: 80%;
+  }
+
+  .footer {
+      text-align: center;
+  }
+}
